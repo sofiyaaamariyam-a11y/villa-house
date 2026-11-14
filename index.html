@@ -1,0 +1,31 @@
+id="guest-email" placeholder="Your email address" required>
+        <input type="date" id="arrival-date" aria-label="Preferred arrival date">
+        <textarea id="guest-message" placeholder="Tell us about your planned stay..." required></textarea>
+        <button type="submit" class="button">Submit Enquiry</button>
+        <p id="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">Hidden Tide Villa</div>
+    <div>Ukulhas · Maldives</div>
+    <p>A peaceful island escape, made memorable.</p>
+    <p>© 2026 Hidden Tide Villa. Website concept for academic project.</p>
+  </footer>
+
+  <script>
+    const enquiryForm = document.getElementById('enquiry-form');
+
+    enquiryForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      document.getElementById('form-message').textContent =
+        'Thank you! This is a demonstration form. A real email or WhatsApp booking connection will be added before launch.';
+
+      enquiryForm.reset();
+    });
+  </script>
+
+</body>
+</html>
